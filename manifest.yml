@@ -1,0 +1,10 @@
+---
+applications:
+  - name: SpringBootMySql
+    memory: 1G
+    path: target\boot-jdbc-0.0.1-SNAPSHOT.jar
+    services:
+      - mysqldb
+    routes:
+      - route: chanduhelloworld.cfapps.io/test
+
